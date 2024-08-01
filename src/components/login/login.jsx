@@ -27,7 +27,7 @@ const Login = () => {
                   Login
                   <img src={btnicon} alt="Enter Icon" className="btn-icon" />
                 </button>
-                <Link to="/main">
+                <Link to="/home">
                 <button type="button" className="demo-button">
                   Login with demo ID
                   <img src={btnicon} alt="Enter Icon" className="btn-icon" />
