@@ -1,0 +1,112 @@
+.button-value-form {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .button-value-form  h1 {
+    color: white;
+    background-color: #9b2063;
+    font-size: 26px;
+    padding: 10px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tablinks {
+    background-color: #9b2063;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .tablinks.active {
+    background-color: #720043;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 45%;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+  }
+  
+  .submit-button {
+    background-color: #9b2063;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .submit-button:hover {
+    background-color: #720043;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .form-group {
+      width: 100%;
+    }
+  
+    .tabs {
+      flex-direction: column;
+    }
+  
+    .tablinks {
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button-value-form {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .input-field {
+      padding: 6px;
+    }
+  
+    .submit-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,261 @@
+.container-fluid{
+    overflow: hidden !important;
+}
+.my-bet-container {
+    background-color: #08c;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+
+.place-bet-box {
+    padding: 10px;
+    background-color: rgb(71, 184, 241);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-bet-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 5px;
+}
+
+.place-bet-box-body {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-bet-for {
+    width: 20%;
+}
+
+.place-bet-odds {
+    width: 20%;
+}
+
+.place-bet-stake {
+    width: 30%;
+}
+
+.place-bet-profit {
+    width: 20%;
+}
+
+.place-bet-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+}
+.place-bet-buttons .btn {
+    color: white;
+    background-color: black;
+}
+
+.place-bet-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.sidebar-title{
+    color: white;
+}
+.groupbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-bets {
+    padding-top: 20px;
+}
+
+.groupbtn {
+    gap: 10px;
+}
+
+.sidebar-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.mybetcolor {
+    color: white;
+
+}
+
+table tr th {
+    color: black;
+
+}
+
+.listbutton {
+    display: flex;
+    overflow: scroll;
+    list-style-type: none;
+
+}
+
+.card-header {
+    background-color: #08c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brtbtn{
+    background-color: black;
+    color: white;
+}
+.listbutton button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: white;
+}
+
+.listbutton button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.listbutton::-webkit-scrollbar {
+    display: none;
+}
+
+.Avitorcard {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-header h5 {
+    color: white;
+    font-weight: 700;
+    text-align: left !important;
+}
+.game-market{
+    width: 100% !important;
+}
+.market-title {
+    background-color: #08c;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.casino-last-result-title {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.listcricle {
+    display: flex;
+    gap: 5px;
+    float: right;
+}
+
+.listcricle li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #ff3;
+    background-color: #355e3b;
+    font-weight: bold;
+}
+
+.market-row {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border-bottom: .01em solid #c7c8ca;
+}
+
+.market-odd-box {
+    min-height: 28px;
+    padding: 2px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid #c7c8ca;
+    cursor: pointer;
+    width: 55px;
+}
+.fancy-min-max {
+    font-size: 12px;
+    font-weight: bold;
+    color: #097c93;
+    word-break: break-all;
+}
+.casino-remark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #355e3b;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.market-odd-box.back {
+    color: #fff;
+    background-color: #08c !important;
+}
+
+.remark-icon img {
+    width: 25px;
+}
+
+.market-nation-detail {
+    width: calc(100% - 160px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.home-page.cardbetection .market-header .market-row .market-odd-box.back {
+    color: #fff;
+    background-color: #2c3e50 !important;
+}

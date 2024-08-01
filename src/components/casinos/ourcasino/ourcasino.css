@@ -1,0 +1,126 @@
+.containerourcasino {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.sideoptionsourcasino {
+    width: 17%;
+    background-color: #550e4a;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tabourcasino {
+    padding: 6px 25px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #550e4a;
+    color: white;
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+.tabourcasino.active {
+    background-color: #0088cca5;
+}
+
+.contentourcasino {
+    flex: 1;
+    /* padding: 0 10px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    background-color: #0088cca5;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    /* width: 100%; */
+    box-sizing: border-box;
+    text-align: left;
+    margin:0px 5px;
+    margin-bottom: 5px;
+    
+}
+
+.gamesourcasino {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* padding: 10px; */
+}
+
+.gameourcasino {
+    width: calc(16% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.gameourcasino img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .containerourcasino {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sideoptionsourcasino {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        overflow-x: auto;
+        width: 100%;
+        background-color: #0088cca5;
+        margin-top: 5px;
+    }
+
+    .tabourcasino {
+        white-space: nowrap; 
+        background-color: #A61567;
+        font-weight: bold;
+    }
+
+    .contentourcasino {
+        width: 100%;
+    }
+
+    .gameourcasino {
+        flex: 1 1 calc(25% - 20px);
+        max-width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gameourcasino {
+        flex: 1 1 calc(34.34% - 20px);
+        max-width: calc(34.34% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gameourcasino {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .header {
+        text-align: center;
+    }
+}

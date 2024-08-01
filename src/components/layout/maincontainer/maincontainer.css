@@ -1,0 +1,231 @@
+.latest-event {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: transparent;
+    gap: 7px;
+}
+
+.latest-event-item {
+    flex: 1;
+    max-width: 100%;
+    min-width: calc(20% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #550e4a;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: #ffffff;
+    /* margin-bottom: 5px; */
+}
+
+.latest-event-item a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+}
+
+.latest-event-item a:hover {
+    color: white;
+}
+.blinkme {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.latest-event-item img {
+    width: 15px;
+}
+
+.mainpart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tabsreal ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.tabsreal ul::-webkit-scrollbar{
+    display: none;
+}
+.tab-icon {
+    width: 20px;
+    display: none; 
+}
+.tabsreal ul::-webkit-scrollbar {
+    height: 15px;
+    background: #f1f1f1;
+}
+
+.tabsreal ul::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+
+
+.tabsreal ul li {
+    flex: 0 0 auto;
+    padding: 5px 20px;
+    background-color: rgb(210, 208, 208);
+    margin: 5px 0;
+    border-right: 1px solid black;
+    font-weight: 450;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabsreal ul li.active {
+    color: white;
+    background-color: #550E4A;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 7px;
+}
+
+.image-gallery img {
+    height: 115px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1199px) {
+    .nav-tabs {
+        background-color: #a61567;
+        border-bottom: 0;
+        box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+        position: relative;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .nav-tabs .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .nav-tabs .nav-link {
+        color: white;
+        border: 0;
+        border-right: 1px solid white;
+        border-radius: 0;
+        padding: 0 8px;
+        font-weight: bold;
+        text-transform: us;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .nav-tabs .nav-item {
+        padding: 10px 0;
+        flex: auto;
+    }
+
+    .latest-event-item {
+        min-width: 50%;
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+        margin-bottom: 5px ;
+    }
+
+    .latest-event-item a {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        white-space: nowrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .tab-icon {
+        display: inline-block; 
+        text-align: center;
+    }
+    .tabsreal ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #550e4a;
+        color: white;
+        margin: 0px;
+        text-transform: uppercase;
+
+    }
+    .tabsreal ul li.active {
+        background-color: #075c86;
+        color: white;
+    }
+    .tabsreal ul::-webkit-scrollbar{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1200px) {
+    .latest-event {
+        overflow-x: auto;
+        background-color: #a61567;
+    }
+    .latest-event-item {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabsreal ul {
+        justify-content: flex-start;
+    }
+   
+    .tabsreal ul li {
+        flex: 0 0 auto;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .latest-event {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
